@@ -1,0 +1,28 @@
+{
+    "nextPaletteID": 1,
+    "palettes": {
+        "custom0": {
+            "id": "custom0",
+            "name": "Neon",
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#B51A00",
+                "#4F7A28",
+                "#AAAAAA",
+                "#FF4013",
+                "#0056D6",
+                "#78DC52",
+                "#003FAD",
+                "#000000",
+                "#EC0000",
+                "#FF46C7",
+                "#FF6000",
+                "#DBD40C",
+                "#38571A",
+                "#FFF900"
+            ],
+            "custom": true
+        }
+    }
+}
