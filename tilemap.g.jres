@@ -76,6 +76,12 @@
         "tilemapTile": true,
         "displayName": "wall10"
     },
+    "tile13": {
+        "data": "hwQQABAAAACQAJAAkACQAAQEBAQEBAQEAAAAAAAAAAAJCQkJCQkJCQAAAADwAAAAkJDwkPCQkJAAAPAAAAAAAADwAAAA8A8PAPAAAADwDw8AAPAAAAAAAJCQ8JDwkJCQAAAAAPAAAAAJCQkJCQkJCQAAAAAAAAAABAQEBAQEBAQAkACQAJAAkA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile"
+    },
     "level 1": {
         "id": "level 1",
         "mimeType": "application/mkcd-tilemap",
