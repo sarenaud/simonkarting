@@ -3,7 +3,7 @@ namespace SpriteKind {
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`wallCenter`, function (sprite, location) {
     game.setGameOverScoringType(game.ScoringType.LowScore)
-    info.setScore(game.runtime() / 100)
+    info.setScore(game.runtime() / 10)
     game.gameOver(true)
     game.setGameOverMessage(true, "GAME OVER!")
     game.reset()
@@ -35,7 +35,7 @@ Car.z = 1
 tiles.placeOnTile(Car, tiles.getTileLocation(2, 13))
 tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 13))
 fakeButtons.setPlayerConnected(controller.player2, true)
-controller.player2.moveSprite(mySprite, 55, 50)
+controller.player2.moveSprite(mySprite, 100, 100)
 fakeButtons.pressMultiplayerButton(controller.player2, ControllerButton.Right)
 let time = 0
 game.onUpdate(function () {
