@@ -1,6 +1,13 @@
 namespace SpriteKind {
     export const Car = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`wallCenter`, function (sprite, location) {
+    game.setGameOverScoringType(game.ScoringType.LowScore)
+    info.setScore(game.runtime() / 100)
+    game.gameOver(true)
+    game.setGameOverMessage(true, "GAME OVER!")
+    game.reset()
+})
 tiles.setCurrentTilemap(tilemap`level 1`)
 Render.setViewMode(ViewMode.tilemapView)
 let mySprite = Render.getRenderSpriteInstance()
