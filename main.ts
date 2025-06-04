@@ -9,7 +9,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`wallCenter`, function (sprite
     game.reset()
 })
 tiles.setCurrentTilemap(tilemap`level 1`)
-Render.setViewMode(ViewMode.tilemapView)
+Render.setViewMode(ViewMode.raycastingView)
 let mySprite = Render.getRenderSpriteInstance()
 let Car = sprites.create(img`
     . . . . . . . . . . . . . . . . 
