@@ -4,7 +4,7 @@
     "dependencies": {
         "device": "*",
         "arcade-fake-button-press": "github:riknoll/arcade-fake-button-press#v0.0.5",
-        "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.18",
+        "pxt-raycasting": "github:neintoes/pxt-raycasting#6f3bd81686da0cc654fb0cff7c5c2bf8528480c3",
         "Timers": "github:microsoft/arcade-timers#v1.1.0"
     },
     "files": [

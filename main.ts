@@ -1,5 +1,6 @@
 namespace SpriteKind {
     export const Car = SpriteKind.create()
+    export const wheel = SpriteKind.create()
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`wallCenter`, function (sprite, location) {
     game.setGameOverScoringType(game.ScoringType.LowScore)
@@ -32,6 +33,8 @@ let Car = sprites.create(img`
 Car.follow(mySprite)
 mySprite.z = 0
 Car.z = 1
+let steering_wheel = sprites.create(assets.image`Wheel1`, SpriteKind.wheel)
+steering_wheel.setFlag(SpriteFlag.RelativeToCamera, true)
 tiles.placeOnTile(Car, tiles.getTileLocation(2, 13))
 tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 13))
 fakeButtons.setPlayerConnected(controller.player2, true)
