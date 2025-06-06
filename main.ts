@@ -33,24 +33,7 @@ let Car = sprites.create(img`
 Car.follow(mySprite)
 mySprite.z = 0
 Car.z = 1
-let steering_wheel = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . 9 9 9 . . . . . . 9 9 9 . . 
-    2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 
-    a a 2 2 6 2 6 6 6 6 2 6 2 2 2 2 
-    a a 2 6 6 2 6 6 6 2 6 6 6 2 2 2 
-    a a 2 6 6 2 2 2 2 2 6 6 6 6 2 2 
-    a a 2 6 6 2 2 2 2 2 6 6 6 6 2 2 
-    a a 2 6 6 2 6 6 6 2 6 6 6 2 2 2 
-    a a 2 2 6 2 6 6 6 6 2 6 2 2 2 2 
-    2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . 
-    . . 9 9 9 . . . . . . 9 9 9 . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Car)
+let steering_wheel = sprites.create(assets.image`Wheelgonnawork`, SpriteKind.wheel)
 steering_wheel.setFlag(SpriteFlag.RelativeToCamera, true)
 tiles.placeOnTile(Car, tiles.getTileLocation(2, 13))
 tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 13))
