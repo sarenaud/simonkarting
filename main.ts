@@ -33,6 +33,14 @@ let Car = sprites.create(img`
 Car.follow(mySprite)
 mySprite.z = 0
 Car.z = 1
+let steering_wheel = sprites.create(assets.image`lasstuwheel`, SpriteKind.wheel)
+steering_wheel.setFlag(SpriteFlag.RelativeToCamera, true)
+tiles.placeOnTile(Car, tiles.getTileLocation(2, 13))
+tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 13))
+fakeButtons.setPlayerConnected(controller.player2, true)
+controller.player2.moveSprite(mySprite, 100, 100)
+fakeButtons.pressMultiplayerButton(controller.player2, ControllerButton.Right)
+let time = 0
 game.onUpdate(function () {
     Car.sayText(game.runtime() / 1000)
 })
